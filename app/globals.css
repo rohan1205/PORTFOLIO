@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #C8E6C8;
+  background: #0A0E0A;
+  overflow: hidden;
+  /* Prevent scrolling for the OS vibe */
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-inter), sans-serif;
+  cursor: crosshair;
+  /* Futuristic cursor */
+  user-select: none;
+  /* Prevent text selection to feel like an OS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for a cleaner OS feel */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.glass-panel {
+  background: #050A05;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #0F2A0F;
+  border-radius: 8px;
+  /* Slightly squarer for OS windows */
+}
+
+.neon-text {
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.4), 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+.matter-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  pointer-events: none;
+  /* Let HTML capture clicks below it if needed or use this for debug */
+}
+
+/* Allow interaction with dragging elements */
+.draggable {
+  cursor: grab;
+  touch-action: none;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
