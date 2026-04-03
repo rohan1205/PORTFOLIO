@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RohanOS v3.0.1 - Developer Portfolio
 
-## Getting Started
+Welcome to **RohanOS**, an immersive, interactive developer portfolio built to resemble a fully functional desktop operating system right in your browser.
 
-First, run the development server:
+![RohanOS Desktop](./public/window.svg)  <!-- Update this later with a screenshot of your OS -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+RohanOS isn't just a static page; it's a dynamic experience packed with features:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Interactive Desktop GUI:** Complete with draggable windows, a functioning taskbar, a real-time system clock, and CPU/RAM monitors.
+- **Boot Sequence & Under Construction Warning:** Authentic terminal-like startup screen sequence.
+- **Working Terminal App:** A powerful terminal simulation. Try commands like `neofetch`, `help`, `whoami`, `clear`, and `sudo hire rohan`.
+- **Applications:**
+  - **Projects Directory:** View my latest work, tech stacks, and Git repositories.
+  - **Web Browser:** An immersive way to explore external links and embedded experiences.
+  - **Settings App:** Tweak system aesthetics like theme color and wallpaper (Matrix Rain, Solid, etc.).
+- **Easter Eggs & Mini-Games:** Windowed playable versions of classic games like **Snake** and **Pong**. Hidden commands and interactions throughout.
+- **3D Interactive Elements:** An interactive 3D WebGL Resume Orb using Three.js mapping that lets you download my CV directly.
+- **Rich Tech Stack:** Built using modern web development practices and tools, optimized for performance and experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework:** [Next.js](https://nextjs.org/) (React)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **3D Graphics:** [Three.js](https://threejs.org/) with `@react-three/fiber` and `@react-three/drei`
+- **Icons:** `lucide-react`
+- **Language:** TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Running Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To get a local copy up and running, follow these simple steps.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+Make sure you have Node.js and npm installed on your machine.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rohan1205/PORTFOLIO-1.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd PORTFOLIO-1
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## 📂 Project Structure
+
+- `/app` - Next.js 14 App Router layout and entry pages.
+- `/components` - Modular React components.
+  - `/apps` - Contains individual windowed applications like `ProjectsApp`, `TerminalApp`, `SettingsApp`.
+  - `/3d` - Contains Three.js components such as `ResumeOrb`.
+- `/public` - Static assets, fonts, icons, and downloadable files like `resume.pdf`.
+
+## 🤝 Contact / Hiring
+
+Interested in working together or hiring me? Use the terminal and type `sudo hire rohan` to find out how to reach me! 
+
+---
+_A creative portfolio experience designed and built by Rohan Yadav._
