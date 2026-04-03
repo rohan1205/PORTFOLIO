@@ -4,6 +4,10 @@ Welcome to **RohanOS**, an immersive, interactive developer portfolio built to r
 
 ![RohanOS Desktop](./public/window.svg)  <!-- Update this later with a screenshot of your OS -->
 
+## 🌐 Live Demo
+
+Check out the live version: [https://rohan3k49.vercel.app/](https://rohan3k49.vercel.app/)
+
 ## 🚀 Features
 
 RohanOS isn't just a static page; it's a dynamic experience packed with features:
